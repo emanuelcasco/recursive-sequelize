@@ -1,0 +1,46 @@
+{
+  "id": "10412",
+  "name": "level:4__10412",
+  "createdAt": "2020-03-26T05:01:30.130Z",
+  "updatedAt": "2020-03-26T05:01:30.130Z",
+  "hierarchy_level": 4,
+  "parent_id": "1041",
+  "ancestors": [
+    {
+      "id": "10",
+      "name": "level:1__10",
+      "createdAt": "2020-03-26T05:01:29.987Z",
+      "updatedAt": "2020-03-26T05:01:29.987Z",
+      "hierarchy_level": 1,
+      "parent_id": null,
+      "NodeAncestor": {
+        "node_id": "10412",
+        "ancestor_id": "10"
+      }
+    },
+    {
+      "id": "104",
+      "name": "level:2__104",
+      "createdAt": "2020-03-26T05:01:30.032Z",
+      "updatedAt": "2020-03-26T05:01:30.032Z",
+      "hierarchy_level": 2,
+      "parent_id": "10",
+      "NodeAncestor": {
+        "node_id": "10412",
+        "ancestor_id": "104"
+      }
+    },
+    {
+      "id": "1041",
+      "name": "level:3__1041",
+      "createdAt": "2020-03-26T05:01:30.065Z",
+      "updatedAt": "2020-03-26T05:01:30.065Z",
+      "hierarchy_level": 3,
+      "parent_id": "104",
+      "NodeAncestor": {
+        "node_id": "10412",
+        "ancestor_id": "1041"
+      }
+    }
+  ]
+}

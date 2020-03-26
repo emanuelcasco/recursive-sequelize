@@ -1,0 +1,58 @@
+{
+  "name": "recursive-node-sequelize-research",
+  "version": "1.0.0",
+  "description": "recursive-node-sequelize-research",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.7"
+  },
+  "main": "db/index.ts",
+  "scripts": {
+    "scripts::populateDatabase": "node db/scripts/populate_db.js",
+    "scripts::findNodeAndAncestors": "node db/scripts/node_ancestors.js",
+    "scripts::findNodeAndDescendents": "node db/scripts/node_descendents.js",
+    "scripts::findAll": "node db/scripts/node_all.js",
+    "scripts::searchQuery": "node db/scripts/node_search.js",
+    "lint": "eslint \"*/**/*.ts\"",
+    "outdated": "npm outdated --depth 0",
+    "start": "node db/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-diff",
+      "pre-push": "npm test"
+    }
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playsistemico/backend-bootstrap.git"
+  },
+  "author": "PlaySistemico",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "pg": "^7.18.1",
+    "pg-native": "^3.0.0",
+    "sequelize": "^5.21.5",
+    "sequelize-hierarchy": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-wolox": "^3.0.2",
+    "eslint-config-wolox-node": "^2.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/playsistemico/backend-bootstrap/issues"
+  },
+  "homepage": "https://github.com/playsistemico/backend-bootstrap#readme"
+}
